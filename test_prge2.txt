@@ -1,0 +1,25 @@
+PROGRAM t1
+
+FUNCTION f11(a,b)
+VARS INTEGER a,b;
+	a=2*b;
+RETURN a
+END_FUNCTION
+
+
+STARTMAIN
+VRS INTEGER x;
+
+x=f11(1,2);
+
+PRINT("x=",x)
+
+
+IF (x>0) THEN 
+	PRINT("error");
+ENDIF
+
+
+
+ENDMAIN
+

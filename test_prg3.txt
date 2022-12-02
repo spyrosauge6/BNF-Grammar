@@ -1,0 +1,32 @@
+PROGRAM t1
+
+STRUCT MY
+VARS CHAR x;
+ENDSTRUCT;
+
+
+FUNCTION f11(a,b)
+VARS INTEGER a,b;
+	a=2*b;
+RETURN a
+END_FUNCTION
+/*
+some comments
+*/
+
+STARTMAIN
+VARS INTEGER x;
+
+x=f11(1,2);
+
+PRINT("x=",x);
+
+
+IF (x>0) THEN 
+	PRINT("error");
+ENDIF
+
+
+
+ENDMAIN
+
